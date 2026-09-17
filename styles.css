@@ -1,0 +1,17 @@
+body {
+  background-image: url('fondo.jpg'); /* Ruta de tu imagen */
+  background-size: cover;          /* Hace que la imagen cubra todo el espacio */
+  background-position: center;     /* Centra la imagen */
+  background-repeat: no-repeat;    /* Evita que la imagen se repita en mosaico */
+  background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+}
+.navbar {
+  background-color: rgba(249, 248, 248, 0.7); /* Fondo semitransparente */
+  color: white;                        /* Color del texto */
+  padding: 10px;                       /* Espaciado interno */
+  position: fixed;                     /* Fija la barra de navegación en la parte superior */
+  top: 0;                              /* Posición superior */
+  width: 100%;                         /* Ancho completo */
+  z-index: 1000;  
+                       /* Asegura que esté por encima de otros elementos */
+}
