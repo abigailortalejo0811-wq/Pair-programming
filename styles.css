@@ -1,17 +1,80 @@
-body {
-  background-image: url('fondo.jpg'); /* Ruta de tu imagen */
-  background-size: cover;          /* Hace que la imagen cubra todo el espacio */
-  background-position: center;     /* Centra la imagen */
-  background-repeat: no-repeat;    /* Evita que la imagen se repita en mosaico */
-  background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+/* Configuración global para evitar desbordamientos de tamaño */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-image: url('fondo.jpg'); 
+  background-size: cover;          
+  background-position: center;     
+  background-repeat: no-repeat;    
+  background-attachment: fixed;    
+  /* SOLUCIÓN: Empuja todo el contenido hacia abajo para que la barra fija no lo tape */
+  padding-top: 80px; 
+}
+
 .navbar {
-  background-color: rgba(249, 248, 248, 0.7); /* Fondo semitransparente */
-  color: white;                        /* Color del texto */
-  padding: 10px;                       /* Espaciado interno */
-  position: fixed;                     /* Fija la barra de navegación en la parte superior */
-  top: 0;                              /* Posición superior */
-  width: 100%;                         /* Ancho completo */
+  background-color: rgba(128, 124, 124, 0.7); 
+  color: rgb(220, 77, 77);                        
+  padding: 30px 15px;      /* Espaciado interno */
+  position: fixed;         
+  top: 0;                              
+  left: 0;                 /* Pegada al borde izquierdo */
+  
+  /* CAMBIOS CLAVE PARA BARRA LATERAL */
+  width: 180px;            /* Ancho fijo para la barra lateral */
+  height: 100vh;           /* 100vh significa el 100% del alto de la pantalla */
   z-index: 1000;  
-                       /* Asegura que esté por encima de otros elementos */
+  
+  /* Organiza el menú en forma de columna (hacia abajo) */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;               /* Separa el logo del menú */
+}
+
+
+ #cajatexto{
+  color: rgb(253, 255, 255);
+  /* Un pequeño diseño para que tu texto de creepypastas sea más legible sobre el fondo */
+  background-color: rgba(53, 38, 38, 0.6); 
+  padding: 20px;
+  margin: 200px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.textbox{
+  color: blanchedalmond;
+   background-color: rgba(130, 37, 37, 0.6); 
+  padding: 20px;
+  margin: 200px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.imagencreepypastas {
+  display: block;          /* Convierte la imagen en un bloque para poder centrarla */
+  max-width: 600px;        /* Controla el tamaño "medianamente grande" (puedes subirlo a 600px si la quieres más grande) */
+  width: 100%;             /* Hace que la imagen sea responsiva y se adapte a pantallas más chicas */
+  height: auto;            /* Mantiene la proporción original de la imagen para que no se deforme */
+  
+  /* Centra la imagen y le da un margen de 20px abajo para no pegarse al texto */
+  margin: 20px auto;       
+  
+  border-radius: 30px;     /* Opcional: le redondea las esquinas para que se vea más moderna */
+  box-shadow: 0 4px 15px rgba(101, 50, 50, 0.5); /* Opcional: le da una sombra oscura muy genial */
+}
+.titulo{
+  background-color: rgba(20, 19, 19, 0.7);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 20px;
+    padding: 20px;
+  margin: 200px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
 }
