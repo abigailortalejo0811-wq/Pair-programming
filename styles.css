@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(128, 124, 124, 0.9); 
+   background-color: rgba(128, 124, 124, 0.9); 
   color: rgb(220, 77, 77);                        
   padding: 30px;     
   position: fixed;         
@@ -25,23 +25,13 @@ body {
   width: 180px;            
   height: 100vh;           
   z-index: 1000;  
-  display: flex;
+  display: flex; 
   flex-direction: column;
-  gap: 30px;               
-}
- #cajatexto{
-  color: rgb(253, 255, 255);
-  
-  background-color: rgba(53, 38, 38, 0.6); 
-  padding: 20px;
-  margin: 200px;
-  border-radius: 8px;
-  max-width: 600px;
-  margin: 20px auto;
+  gap: 30px;                           
 }
 .textbox{
   color: blanchedalmond;
-   background-color: rgba(130, 37, 37, 0.6); 
+   background-color: rgba(130, 37, 37, 0.759); 
   padding: 20px;
   margin: 200px;
   border-radius: 8px;
@@ -75,5 +65,32 @@ footer{
   background-position: center;
   padding: 20px;
   text-align: center;
-  color: red;
+  color: rgb(235, 37, 37);
+  font-size: 1.2em;
+}
+.imagenridiculo{
+  display: block;
+    width: 75%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+#fondocuadrodetexto{
+  background-color: rgba(66, 7, 7, 0.558);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+    padding: 20px;
+  margin: 200px;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: auto;
+}
+#imagenderecha{
+  position: fixed;
+top:75%;
+  right: 20px;
+  transform: translateY(-50%);
+  max-width: 300px;
+  width: 100%;
+  height: auto;
 }
